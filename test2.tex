@@ -92,8 +92,14 @@
 
 
 \newcommand{\newconfig}[1]{%
-\renewcommand{\Xconfig}{#1}
+
+
 \chapter*{Configuration \Xconfig}
+
+\renewcommand{\Xconfig}{#1}
+
+\newpage
+\phantom{a}
 
 \newpage
 \phantom{a}
@@ -200,8 +206,9 @@ Ciaonissimo
 
 
 %%%%%% CONFIG B
-\renewcommand{\Xconfig}{B}
+
 \chapter*{Configuration \Xconfig}
+\renewcommand{\Xconfig}{B}
 
 \begin{dynamiccontents*}{effic}
 \includegraphics[width=0.7\textwidth,height=\textheight]{Configuration\Xconfig}
@@ -210,11 +217,13 @@ Ciaonissimo
 \newpage
 \phantom{a}
 
+
 \newpage
 \phantom{a}
 
 \newpage
 \phantom{a}
+
 
 \newconfig{C}
 
